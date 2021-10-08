@@ -1,0 +1,721 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 16158 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/nicbr/Desktop/cosc-4358-project/Meep's Adventure
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58987
+Successfully changed project path to: C:/Users/nicbr/Desktop/cosc-4358-project/Meep's Adventure
+C:/Users/nicbr/Desktop/cosc-4358-project/Meep's Adventure
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 53.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/nicbr/Desktop/cosc-4358-project/Meep's Adventure/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX150 (ID=0x1d10)
+    Vendor:   
+    VRAM:     1983 MB
+    Driver:   27.21.14.6231
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002939 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.425 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1425ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (513ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (194ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (91ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004806 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 50.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.335 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1336ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1082ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (352ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (50ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (238ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.0 MB.
+System memory in use after: 93.1 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2530.
+Total: 3.212500 ms (FindLiveObjects: 0.219200 ms CreateObjectMapping: 0.099900 ms MarkObjects: 2.818600 ms  DeleteObjects: 0.073700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/2D Desert Pack - Handcrafted Art/stone1.png
+  artifactKey: Guid(a9b00f263d1b8054d89fb2b19c8b7086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/stone1.png using Guid(a9b00f263d1b8054d89fb2b19c8b7086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f8772656a75a1bd64a9037d3513ac0') in 0.150671 seconds 
+  Import took 0.155139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/trunk3.png
+  artifactKey: Guid(80d147be2a287304e847d2d2ff4c8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/trunk3.png using Guid(80d147be2a287304e847d2d2ff4c8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fd6f29775d5a91c6c37647a2c16ebe') in 0.016746 seconds 
+  Import took 0.020963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/stone6.png
+  artifactKey: Guid(426ac2f7a9c2d1c4097df0dd055408cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/stone6.png using Guid(426ac2f7a9c2d1c4097df0dd055408cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d59a502fa1bda931c3c05b05f039a5d') in 0.015672 seconds 
+  Import took 0.019232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/stone7.png
+  artifactKey: Guid(84293a5c5e9d1e0468380b47955dab39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/stone7.png using Guid(84293a5c5e9d1e0468380b47955dab39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d79a7be52179352152110779d40192') in 0.015613 seconds 
+  Import took 0.019289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000556 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree4_flat.png
+  artifactKey: Guid(9ddcc87088c4d7b40b04b357b908b859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree4_flat.png using Guid(9ddcc87088c4d7b40b04b357b908b859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '963a1c32a0536305d20d694404372964') in 0.021370 seconds 
+  Import took 0.025618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree3.png
+  artifactKey: Guid(8f546565c92c19b4aabf880204667dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree3.png using Guid(8f546565c92c19b4aabf880204667dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e6ed7f0da945bce19315e7958210ef') in 0.017506 seconds 
+  Import took 0.021118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000620 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tumbleweed.png
+  artifactKey: Guid(fada9cd05b0824442b1a5cf2f9ec6dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tumbleweed.png using Guid(fada9cd05b0824442b1a5cf2f9ec6dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddafdbffe51ccf6919a50f44583ff36') in 0.016411 seconds 
+  Import took 0.020156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000600 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art
+  artifactKey: Guid(ab3c5b3b77aa92042a4b74340fefc45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art using Guid(ab3c5b3b77aa92042a4b74340fefc45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43bd08bb51554d2f61349358f837fc2') in 0.003717 seconds 
+  Import took 0.007199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/trunk4.png
+  artifactKey: Guid(abcbc8e8df38c7746bbbf0fb234c48f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/trunk4.png using Guid(abcbc8e8df38c7746bbbf0fb234c48f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226021a9e31de322647a50edaa8577d5') in 0.014722 seconds 
+  Import took 0.018314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree1_flat.png
+  artifactKey: Guid(6f517d58f83ceaf439453e74d7282dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree1_flat.png using Guid(6f517d58f83ceaf439453e74d7282dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dccc07374850cc9cd162f833a31dc667') in 0.017193 seconds 
+  Import took 0.020716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/sunray.tif
+  artifactKey: Guid(a206f09d57655ef4a97d123c3d871870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/sunray.tif using Guid(a206f09d57655ef4a97d123c3d871870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8a5a3717189c00535dc78cfbaa2fa28') in 0.017050 seconds 
+  Import took 0.021084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree6_flat.png
+  artifactKey: Guid(1c5634df82e13fe49bcd7721bd770532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree6_flat.png using Guid(1c5634df82e13fe49bcd7721bd770532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a7e87e9d6e431d4c7214d65a3749cc') in 0.018536 seconds 
+  Import took 0.022209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/skull1.png
+  artifactKey: Guid(7ee27a151fd79224a97caaf4bbd3323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/skull1.png using Guid(7ee27a151fd79224a97caaf4bbd3323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd936cea041d5df518ac1634b849e73') in 0.015509 seconds 
+  Import took 0.019363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree6.png
+  artifactKey: Guid(719b46286e5a31d48a054be47f25d0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree6.png using Guid(719b46286e5a31d48a054be47f25d0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f5a7111c8a8624a4d0f952c42427131') in 0.019122 seconds 
+  Import took 0.023126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/skull4.png
+  artifactKey: Guid(6bdc8bb35fb22ae48a7ff370bc4845a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/skull4.png using Guid(6bdc8bb35fb22ae48a7ff370bc4845a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97159492aff504e2728c15f83944455') in 0.014330 seconds 
+  Import took 0.018241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/ray.png
+  artifactKey: Guid(ecc03f8421674ee45a4479ea621ee2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/ray.png using Guid(ecc03f8421674ee45a4479ea621ee2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3edccdaed026f401795c1e68c9ec7a') in 0.012257 seconds 
+  Import took 0.015781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree1.png
+  artifactKey: Guid(1b172835c5999234aae6a38331fd6275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree1.png using Guid(1b172835c5999234aae6a38331fd6275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d302dbe065e8753cd2a3c1e8b98a5d') in 0.017555 seconds 
+  Import took 0.021399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/skull2.png
+  artifactKey: Guid(ca0288950d35be14095a364c308c688c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/skull2.png using Guid(ca0288950d35be14095a364c308c688c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6fac2e9b7ee1c2197b0bd38339ab885') in 0.014327 seconds 
+  Import took 0.018261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree8_flat.png
+  artifactKey: Guid(59720889c5aee224191bc06b0f150565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree8_flat.png using Guid(59720889c5aee224191bc06b0f150565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf24634186f35569474472857ab0f99') in 0.016142 seconds 
+  Import took 0.020476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree7.png
+  artifactKey: Guid(53696ef05d0abb1479bf4d54ad2e9e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree7.png using Guid(53696ef05d0abb1479bf4d54ad2e9e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef981cfc557b1b4ead20ad3f842dc651') in 0.016230 seconds 
+  Import took 0.020053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/stone5.png
+  artifactKey: Guid(299cc05e0cc6b41438ce01ec50643121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/stone5.png using Guid(299cc05e0cc6b41438ce01ec50643121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a21e4d8466640af96d96b2765fb499e') in 0.014338 seconds 
+  Import took 0.017861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/stone3.png
+  artifactKey: Guid(4ae12a4c790ba6e4a8d797d0d7a7f7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/stone3.png using Guid(4ae12a4c790ba6e4a8d797d0d7a7f7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7daa64f7103d8338035b53fd885b1bd') in 0.014493 seconds 
+  Import took 0.018025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree2_flat.png
+  artifactKey: Guid(b102068789926ee4e876af9b01ecc840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree2_flat.png using Guid(b102068789926ee4e876af9b01ecc840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4befff4b0981c10882f72e3ee9ea83e8') in 0.015737 seconds 
+  Import took 0.019318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree5.png
+  artifactKey: Guid(582c841ecead5bd4aa663c24e3f38d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree5.png using Guid(582c841ecead5bd4aa663c24e3f38d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5661eb17895f1fbc3f43e2316b4ed5') in 0.016928 seconds 
+  Import took 0.021085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree4.png
+  artifactKey: Guid(3653e4b0c395cbf42ac8d8c391dc3577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree4.png using Guid(3653e4b0c395cbf42ac8d8c391dc3577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67920fc0ff3f70d0e4e3878b113782c2') in 0.017665 seconds 
+  Import took 0.021336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree5_flat.png
+  artifactKey: Guid(df8807fc88fa1af41b7b490f270b9693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree5_flat.png using Guid(df8807fc88fa1af41b7b490f270b9693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc69440b771f8258d3456a3a85f12f3') in 0.016048 seconds 
+  Import took 0.020815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree2.png
+  artifactKey: Guid(2704317c1530d0f47bf78dcd0ce8ce1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree2.png using Guid(2704317c1530d0f47bf78dcd0ce8ce1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f740393f8fe6fe85d6f379da35945d8b') in 0.017200 seconds 
+  Import took 0.020814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree8.png
+  artifactKey: Guid(b73ee6da50210b3418e39c5186d25a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree8.png using Guid(b73ee6da50210b3418e39c5186d25a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '741f9d857c6409b200d5ad592ebb70f0') in 0.017785 seconds 
+  Import took 0.021151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/stone4.png
+  artifactKey: Guid(c8edc751011732c4caa948ac0f71b067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/stone4.png using Guid(c8edc751011732c4caa948ac0f71b067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb77dd6b833a36badbc7db32655cdd63') in 0.015899 seconds 
+  Import took 0.019934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/trunk1.png
+  artifactKey: Guid(03b42e92e228dc34ab2876d0c9d34018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/trunk1.png using Guid(03b42e92e228dc34ab2876d0c9d34018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efdddfdf0a160751f2cef8874f1647a3') in 0.016216 seconds 
+  Import took 0.020283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/trunk2.png
+  artifactKey: Guid(038e7d6a64dd0684c9140e74a96fff9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/trunk2.png using Guid(038e7d6a64dd0684c9140e74a96fff9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '985601ba24bf76197c6200fc42eed649') in 0.015180 seconds 
+  Import took 0.018769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree3_flat.png
+  artifactKey: Guid(40bf9b37de80777448bd139067e1f74c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree3_flat.png using Guid(40bf9b37de80777448bd139067e1f74c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7b1fb3aa0cb51d409a95e5aa7082cc') in 0.019947 seconds 
+  Import took 0.023642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/skull3.png
+  artifactKey: Guid(661eab612be9e99418ae3635ed54a166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/skull3.png using Guid(661eab612be9e99418ae3635ed54a166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566e816c20a2883ee93ba77b7ac36f29') in 0.019270 seconds 
+  Import took 0.024424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/stone2.png
+  artifactKey: Guid(ce266d98f2a956546bcaefdd2740bf6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/stone2.png using Guid(ce266d98f2a956546bcaefdd2740bf6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf02639940c94ea30632621ad323d4b') in 0.017126 seconds 
+  Import took 0.021441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/tree7_flat.png
+  artifactKey: Guid(a5c0543434a777141b7402565ac96d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/tree7_flat.png using Guid(a5c0543434a777141b7402565ac96d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322a66824b5d116d33d68471d59e05f8') in 0.017836 seconds 
+  Import took 0.021461 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005754 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.364 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1365ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1100ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (402ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (382ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (272ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2082 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.5 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2542.
+Total: 3.184500 ms (FindLiveObjects: 0.199900 ms CreateObjectMapping: 0.087500 ms MarkObjects: 2.877000 ms  DeleteObjects: 0.019000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 109.922865 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/ProceduralGeneration.cs
+  artifactKey: Guid(215b4eec274d37b42af191a8bc289630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/ProceduralGeneration.cs using Guid(215b4eec274d37b42af191a8bc289630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c290cfe3dd2c3aab62b073df1a1160e') in 0.017081 seconds 
+  Import took 0.021492 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004617 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.344 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1344ms)
+		BeginReloadAssembly (193ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1038ms)
+			LoadAssemblies (147ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (365ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (355ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (252ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2082 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.5 MB.
+System memory in use after: 95.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2545.
+Total: 3.244100 ms (FindLiveObjects: 0.231200 ms CreateObjectMapping: 0.094600 ms MarkObjects: 2.897400 ms  DeleteObjects: 0.019800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 718.064114 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/ProceduralGeneration.cs
+  artifactKey: Guid(215b4eec274d37b42af191a8bc289630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/ProceduralGeneration.cs using Guid(215b4eec274d37b42af191a8bc289630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82e5cdf5a89e7798ec5a3f78c60b6d2') in 0.010104 seconds 
+  Import took 0.014951 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004622 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.495 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1495ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1244ms)
+			LoadAssemblies (145ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (408ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (438ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (291ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2082 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.5 MB.
+System memory in use after: 95.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2548.
+Total: 3.827700 ms (FindLiveObjects: 0.289900 ms CreateObjectMapping: 0.122700 ms MarkObjects: 3.391900 ms  DeleteObjects: 0.021900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007406 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.471 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1471ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1222ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (518ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (355ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (248ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2082 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.5 MB.
+System memory in use after: 95.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2551.
+Total: 3.381700 ms (FindLiveObjects: 0.237900 ms CreateObjectMapping: 0.088700 ms MarkObjects: 3.034600 ms  DeleteObjects: 0.019400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 329.611586 seconds.
+  path: Assets/2D Desert Pack - Handcrafted Art/desertplatformPuzzle.png
+  artifactKey: Guid(ceb8660e35237b841a34b4cebc813829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Desert Pack - Handcrafted Art/desertplatformPuzzle.png using Guid(ceb8660e35237b841a34b4cebc813829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1db48f2fed983be1cbfdf649a33dea') in 0.148483 seconds 
+  Import took 0.155964 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005105 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.286 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1286ms)
+		BeginReloadAssembly (180ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1013ms)
+			LoadAssemblies (144ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (342ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (367ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2082 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.6 MB.
+System memory in use after: 95.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2557.
+Total: 3.362500 ms (FindLiveObjects: 0.264600 ms CreateObjectMapping: 0.206600 ms MarkObjects: 2.869600 ms  DeleteObjects: 0.020400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
