@@ -1,3 +1,6 @@
-
+Meep's Adventure/[Ll]ibrary/
+Meep's Adventure/[Tt]emp/
+Meep's Adventure/[Ll]ogs/
+Meep's Adventure/[Ll]ogs/*.log
 *.log
 .DS_Store
