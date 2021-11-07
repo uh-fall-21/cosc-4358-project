@@ -504,7 +504,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
@@ -573,7 +573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.989052, y: -0.29309845, z: 7.496805}
+  m_LocalPosition: {x: -25.011053, y: -0.30009842, z: 7.496805}
   m_LocalScale: {x: 0.64379, y: 0.6276888, z: 0.64379}
   m_Children: []
   m_Father: {fileID: 1856846184}
@@ -1680,7 +1680,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.03125, y: 1.84375}
+  m_Size: {x: 3.1484375, y: 1.96875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1751,7 +1751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455729123}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.989052, y: -0.29309845, z: 7.496805}
+  m_LocalPosition: {x: -25.011053, y: -0.30009842, z: 7.496805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412753781}
@@ -1965,7 +1965,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752278711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0452, y: -0.4639, z: -5.077691}
+  m_LocalPosition: {x: 0.0452, y: -0.9, z: -5.077691}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1797451463}
@@ -2011,9 +2011,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1797451463}
   - component: {fileID: 1797451462}
-  - component: {fileID: 1797451468}
-  - component: {fileID: 1797451465}
   - component: {fileID: 1797451469}
+  - component: {fileID: 1797451465}
+  - component: {fileID: 1797451468}
+  - component: {fileID: 1797451464}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -2061,7 +2062,7 @@ SpriteRenderer:
   m_SortingLayerID: -968211987
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 49a6589a7289a0046a770d57c71ff16f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e19b0a78a46ecf5469b30669720b9eb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2080,14 +2081,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797451461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.05, y: 2.92, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -28.072, y: 2.913, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 1752278712}
   - {fileID: 1755642779}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1797451464
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797451461}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 439b97a0536ec1141a229a20398798b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &1797451465
 Rigidbody2D:
   serializedVersion: 4
@@ -2122,18 +2142,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.046510458, y: -0.05170679}
+  m_Offset: {x: 0.0629919, y: 0.002520144}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.24, y: 1.89}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.40359783, y: 0.8414326}
+  m_Size: {x: 1.1173819, y: 1.8879734}
   m_EdgeRadius: 0
 --- !u!114 &1797451469
 MonoBehaviour:
@@ -2150,7 +2170,7 @@ MonoBehaviour:
   amountOfJumps: 2
   movementSpeed: 8
   jumpForce: 16
-  groundCheckRadius: 0.15
+  groundCheckRadius: 0.3
   wallCheckDistance: 0.3
   wallSlideSpeed: 1
   movementForceInAir: 1
