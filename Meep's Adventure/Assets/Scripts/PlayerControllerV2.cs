@@ -26,8 +26,10 @@ public class PlayerControllerV2 : MonoBehaviour
     private bool canMove;
     private bool canFlip;
     private bool hasWallJumped;
+    private bool isWalking;
 
     private Rigidbody2D rb;
+    private Animator anim;
 
     public int amountOfJumps = 1;
 
@@ -60,6 +62,7 @@ public class PlayerControllerV2 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         amountOfJumpLeft = amountOfJumps;
         wallHopDirection.Normalize();
@@ -72,11 +75,11 @@ public class PlayerControllerV2 : MonoBehaviour
     {
         CheckInput();
         CheckMovementDirection();
+        UpdateAnimations();
         CheckIfCanJump();
         CheckIfWallSliding();
         CheckJump();
-        //not added yet
-        //UpdateAnimations();
+        
     }
 
     private void CheckIfWallSliding()
@@ -140,6 +143,22 @@ public class PlayerControllerV2 : MonoBehaviour
         {
             Flip();
         }
+
+        if(rb.velocity.x != 0)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
+    }
+
+    private void UpdateAnimations()
+    {
+        anim.SetBool("isWalking", isWalking);
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("yVelocity", rb.velocity.y);
     }
 
     private void Flip()
