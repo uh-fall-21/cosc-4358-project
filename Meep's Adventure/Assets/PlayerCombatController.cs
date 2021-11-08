@@ -54,9 +54,9 @@ public class PlayerCombatController : MonoBehaviour
                 gotInput = false;
                 isAttacking = true;
                 isFirstAttack = !isFirstAttack;
-                //anim.SetBool("attack1", true);
-                //anim.SetBool("firstAttack", isFirstAttack);
-                //anim.SetBool("isAttacking", isAttacking);
+                anim.SetBool("attack1", true);
+                anim.SetBool("firstAttack", isFirstAttack);
+                anim.SetBool("isAttacking", isAttacking);
             }
         }
         if (Time.time >= lastInputTime + inputTimer)
@@ -81,8 +81,8 @@ public class PlayerCombatController : MonoBehaviour
     private void FinishAttack1()
     {
         isAttacking = false;
-        //anim.SetBool("isAttacking", isAttacking);
-        //anim.SetBool("attack1", false);
+        anim.SetBool("isAttacking", isAttacking);
+        anim.SetBool("attack1", false);
     }
 
     private void onDrawGizmos()
