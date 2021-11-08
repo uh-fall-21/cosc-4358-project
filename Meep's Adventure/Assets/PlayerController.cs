@@ -153,6 +153,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void DisableFlip()
+    {
+        canFlip = false;
+    }
+    public void EnableFlip()
+    {
+        canFlip = true;
+    }
+    
     private void UpdateAnimations()
     {
         anim.SetBool("isWalking", isWalking);
