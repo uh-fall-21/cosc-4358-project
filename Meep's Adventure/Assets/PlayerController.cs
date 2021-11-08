@@ -143,7 +143,8 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
 
-        if(rb.velocity.x != 0)
+        //if(rb.velocity.x != 0) //old code, see clip part 9 @11:24 -ML
+        if(Mathf.Abs(rb.velocity.x) >= 0.01f)
         {
             isWalking = true;
         }
@@ -153,11 +154,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void DisableFlip()
+    {
+        canFlip = false;
+    }
+
+    public void EnableFlip()
+    {
+        canFlip = true;
+    }
+    
     private void UpdateAnimations()
     {
         anim.SetBool("isWalking", isWalking);
         anim.SetBool("isGrounded", isGrounded);
         anim.SetFloat("yVelocity", rb.velocity.y);
+        anim.SetBool("isWallSliding", isWallSliding);
     }
 
     private void Flip()
