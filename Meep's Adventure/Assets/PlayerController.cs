@@ -96,6 +96,7 @@ public class PlayerController : MonoBehaviour
         CheckJump();
         UpdateAnimations();
         CheckDash();
+        CheckKnockback();
     }
 
     private void CheckIfWallSliding()
@@ -111,11 +112,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*
+    
     public bool GetDashStatus(){
         return isDashing;
     }
-    */
+    
     public void Knockback(int direction){
         knockback=true;
         knockbackStartTime = Time.time;
