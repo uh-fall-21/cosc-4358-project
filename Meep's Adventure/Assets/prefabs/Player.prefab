@@ -89,7 +89,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6957085961360219006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.86, y: 2.38, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 6957085961346405123}
@@ -160,6 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb4573faba812142a687b2ec62f0824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackDuration: 0
+  knockbackSpeed: {x: 0, y: 0}
   amountOfJumps: 2
   movementSpeed: 8
   jumpForce: 16
