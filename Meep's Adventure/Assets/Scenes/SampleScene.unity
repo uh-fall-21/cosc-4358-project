@@ -841,7 +841,7 @@ MonoBehaviour:
   attack1HitBoxPos: {fileID: 997903329}
   whatIsDamageable:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
 --- !u!114 &889139831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997903328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3, y: -0.3, z: 0}
+  m_LocalPosition: {x: 1.4, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1797451466}
@@ -12883,15 +12883,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
       propertyPath: knockbackSpeed.x
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
       propertyPath: knockbackSpeed.y
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
       propertyPath: knockbackDuration
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
       propertyPath: distanceBetweenImages

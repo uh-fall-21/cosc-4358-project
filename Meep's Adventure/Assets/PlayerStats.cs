@@ -32,6 +32,8 @@ public class PlayerStats : MonoBehaviour
         //Instantiate(deathBloodParticle,transform.position, deathBloodParticle.transform.rotation);
         //GM.Respawn();
         Destroy(gameObject);
+        //wait(1);
+        //loadscene(death);
        
         
         
