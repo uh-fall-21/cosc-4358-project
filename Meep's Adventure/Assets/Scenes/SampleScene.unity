@@ -842,6 +842,21 @@ MonoBehaviour:
   whatIsDamageable:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &889139831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889139824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cd0323aaee87c41a44b3e9aaf88a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  deathChunkParticle: {fileID: 0}
+  deathBloodParticle: {fileID: 0}
 --- !u!1 &997903328
 GameObject:
   m_ObjectHideFlags: 0
@@ -12865,6 +12880,18 @@ PrefabInstance:
     - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
       propertyPath: dashCoolDown
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
+      propertyPath: knockbackSpeed.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
+      propertyPath: knockbackSpeed.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
+      propertyPath: knockbackDuration
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6957085961360218998, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
       propertyPath: distanceBetweenImages
