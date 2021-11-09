@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float knockbackDuration;
     
-    private int amountOfJumpLeft;
+    private int amountOfJumpsLeft;
     private int facingDirection = 1;
     private int lastWallJumpDirection;
 
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        amountOfJumpLeft = amountOfJumps;
+        amountOfJumpsLeft = amountOfJumps;
         wallHopDirection.Normalize();
         wallJumpDirection.Normalize();
 
@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isGrounded && rb.velocity.y <= 0.1f)
         {
-            amountOfJumpLeft = amountOfJumps;
+            amountOfJumpsLeft = amountOfJumps;
 
         }
 
@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour
             canWallJump = true;
         }
 
-        if (amountOfJumpLeft <= 0)
+        if (amountOfJumpsLeft <= 0)
         {
             canNormalJump = false;
         }
@@ -224,7 +224,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            if (isGrounded || (amountOfJumpLeft > 0 && !isTouchingWall))
+            if (isGrounded || (amountOfJumpsLeft > 0 && !isTouchingWall))
             {
                 NormalJump();
             }
@@ -350,7 +350,7 @@ public class PlayerController : MonoBehaviour
         if (canNormalJump && !isWallSliding)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            amountOfJumpLeft--;
+            amountOfJumpsLeft--;
             jumpTimer = 0;
             isAttemptingToJump = false;
             checkJumpMultiplier = true;
@@ -363,8 +363,8 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, 0.0f);
             isWallSliding = false;
-            amountOfJumpLeft = amountOfJumps;
-            amountOfJumpLeft--;
+            amountOfJumpsLeft = amountOfJumps;
+            amountOfJumpsLeft--;
             Vector2 forceToAdd = new Vector2(wallJumpForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
             jumpTimer = 0;
