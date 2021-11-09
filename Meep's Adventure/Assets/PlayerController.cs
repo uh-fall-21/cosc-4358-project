@@ -283,12 +283,14 @@ public class PlayerController : MonoBehaviour
     {
         if (isDashing)
         {
+            //SoundManagerScript.PlaySound("dashSound");
             if(dashTimeLeft > 0)
             {
                 canMove = false;
                 canFlip = false;
                 rb.velocity = new Vector2(dashSpeed * facingDirection, rb.velocity.y);
                 dashTimeLeft -= Time.deltaTime;
+                
 
                 if(Mathf.Abs(transform.position.x - lastImageXpos) > distanceBetweenImages)
                 {
@@ -377,6 +379,7 @@ public class PlayerController : MonoBehaviour
             hasWallJumped = true;
             wallJumpTimer = wallJumpTimerSet;
             lastWallJumpDirection = -facingDirection;
+            SoundManagerScript.PlaySound("JumpNoiseProcessed");
         }
     }
 
