@@ -63,6 +63,7 @@ public class PlayerCombatController : MonoBehaviour
                 anim.SetBool("attack1", true);
                 anim.SetBool("firstAttack", isFirstAttack);
                 anim.SetBool("isAttacking", isAttacking);
+                SoundManagerScript.PlaySound("hammerSound");
             }
         }
         if (Time.time >= lastInputTime + inputTimer)
