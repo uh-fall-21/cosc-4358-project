@@ -8,6 +8,7 @@ public class mainmenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SoundManagerScript.PlaySound("ClickNoise");
     }
 
     public void QuitGame()

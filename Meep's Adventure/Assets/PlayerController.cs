@@ -279,6 +279,7 @@ public class PlayerController : MonoBehaviour
             jumpTimer = 0;
             isAttemptingToJump = false;
             checkJumpMultiplier = true;
+            SoundManagerScript.PlaySound("JumpNoiseProcessed");
         }
     }
 
