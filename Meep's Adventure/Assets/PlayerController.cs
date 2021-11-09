@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     private float turnTimer;
     private float wallJumpTimer;
 
+    private float knockbackStartTime;
+    [SerializeField]
+    private float knockbackDuration;
+    
     private int amountOfJumpLeft;
     private int facingDirection = 1;
     private int lastWallJumpDirection;
@@ -27,6 +31,10 @@ public class PlayerController : MonoBehaviour
     private bool canFlip;
     private bool hasWallJumped;
     private bool isWalking;
+    private bool knockback;
+
+    [SerializeField]
+    private Vector2 knockbackSpeed;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -94,6 +102,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
+    public bool GetDashStatus(){
+        return isDashing;
+    }
+    */
+    public void Knockback(int direction){
+        knockback=true;
+        knockbackStartTime = Time.time;
+        rb.velocity= new Vector2(knockbackSpeed.x*direction,knockbackSpeed.y);
+    }
+
+    private void CheckKnockback(){
+        if(Time.time>=knockbackStartTime+knockbackDuration && knockback){
+            knockback=false;
+            rb.velocity=new Vector2(0.0f,rb.velocity.y);
+        }
+    }
     private void CheckIfCanJump()
     {
         if (isGrounded && rb.velocity.y <= 0.1f)
@@ -174,7 +199,7 @@ public class PlayerController : MonoBehaviour
 
     private void Flip()
     {
-        if (!isWallSliding && canFlip)
+        if (!isWallSliding && canFlip && !knockback)
         {
             facingDirection *= -1;
             isFacingRight = !isFacingRight;
@@ -306,11 +331,11 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyMovement()
     {
-        if (!isGrounded && !isWallSliding && movementInputDirection == 0)
+        if (!isGrounded && !isWallSliding && movementInputDirection == 0 && !knockback)
         {
             rb.velocity = new Vector2(rb.velocity.x * airDragMultiplier, rb.velocity.y);
         }
-        else if (canMove)
+        else if (canMove && !knockback)
         {
             rb.velocity = new Vector2(movementSpeed * movementInputDirection, rb.velocity.y);
         }

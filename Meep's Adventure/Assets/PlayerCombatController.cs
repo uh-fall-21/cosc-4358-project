@@ -18,12 +18,18 @@ public class PlayerCombatController : MonoBehaviour
 
     private float lastInputTime = Mathf.NegativeInfinity; //always ready to attack since beginning of game
 
+    private float[] attackDetails = new float[2];
     private Animator anim;
+
+    private PlayerController PC;
+    private PlayerStats PS;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", combatEnabled);
+        PC = GetComponent<PlayerController>();
+        PS = GetComponent<PlayerStats>();
     }
 
     private void Update()
@@ -70,9 +76,13 @@ public class PlayerCombatController : MonoBehaviour
     private void CheckAttackHitBox()
     {
         Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(attack1HitBoxPos.position, attack1Radius, whatIsDamageable);
+        
+        attackDetails[0]=attack1Damage;
+        attackDetails[1]=transform.position.x;
+
         foreach(Collider2D collider in detectedObjects)
         {
-            collider.transform.parent.SendMessage("Damage", attack1Damage);
+            collider.transform.parent.SendMessage("Damage", attackDetails);
             //instantiate hit particle
         }
     }
@@ -83,6 +93,21 @@ public class PlayerCombatController : MonoBehaviour
         isAttacking = false;
         anim.SetBool("isAttacking", isAttacking);
         anim.SetBool("attack1", false);
+    }
+
+    private void Damage(float[] attackDetails){
+        int direction; 
+
+        //todo: damage the player and respawn using attackDetails[0]
+        PS.DecreaseHealth(attackDetails[0]);
+        //if(!PC.GetDashStatus()){
+        if(attackDetails[1]< transform.position.x){
+            direction=1;
+        }else{
+            direction = -1;
+        }
+        PC.Knockback(direction);
+        //}
     }
 
     private void onDrawGizmos()
