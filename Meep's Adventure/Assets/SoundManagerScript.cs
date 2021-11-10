@@ -1,14 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundManagerScript : MonoBehaviour
 {
     static AudioSource audioSrc;
     public static AudioClip jumpSound, clickSound, slideSound, crabDeathSound, meepDeathSound, hammerSound, dashSound;
+    [SerializeField] Slider volumeSlider;
 
     // Use this for intialization
     void Start(){ //need to get to assets folder then sounds wrong path will fix
+
+        if(!PlayerPrefs.HasKey("musicVolume")){
+            PlayerPrefs.SetFloat("musicVolume", 1);
+            Load();
+        }
 
         jumpSound = Resources.Load<AudioClip> ("JumpNoiseProcessed");
         clickSound = Resources.Load<AudioClip> ("ClickNoise");
@@ -21,11 +28,17 @@ public class SoundManagerScript : MonoBehaviour
         audioSrc = GetComponent<AudioSource> ();
         
     }
+    public void changeVolume(){
+        AudioListener.volume = volumeSlider.value;
+        Save();
+    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Load(){
+        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+    }
+
+    private void Save(){
+        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
 
     public static void PlaySound(string clip){
