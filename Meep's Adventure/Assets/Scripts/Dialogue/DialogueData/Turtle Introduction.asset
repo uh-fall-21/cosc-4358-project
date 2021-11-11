@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2dd153e455077a449898c4839d843f9, type: 3}
+  m_Name: Turtle Introduction
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Hi I'm Shelly!
+  - 'Welcome to the Desert Wasteland! You''re not from around here are you? '
+  responses:
+  - responseText: How did you know?
+    dialogueObject: {fileID: 11400000, guid: 4e8c831f1114f4b4aae90677d6ba9bf6, type: 2}
+  - responseText: Shut up Turtle!
+    dialogueObject: {fileID: 11400000, guid: 0e51eff1011fe334fbbcffc1d96636fc, type: 2}

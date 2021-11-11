@@ -6,6 +6,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    [SerializeField] private DialogueUI dialogueUI;
+
+    public DialogueUI DialogueUI => dialogueUI;
+
+    public IInteractable Interactable { get; set; }
+
     private float movementInputDirection;
     private float jumpTimer;
     private float turnTimer;
@@ -90,6 +96,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (dialogueUI.IsOpen) return;
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (Interactable != null)
+            {
+                Interactable.Interact(this);
+            }
+        }
+
         CheckInput();
         CheckMovementDirection();
         CheckIfCanJump();
@@ -98,6 +115,8 @@ public class PlayerController : MonoBehaviour
         UpdateAnimations();
         CheckDash();
         CheckKnockback();
+
+        
     }
 
     private void CheckIfWallSliding()
