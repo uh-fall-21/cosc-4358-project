@@ -1276,41 +1276,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!1 &889139824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6957085961360219006, guid: 7338b2a3d4e7f3b4d852bdc016dc7ed6, type: 3}
-  m_PrefabInstance: {fileID: 6957085960938550715}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &889139825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889139824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5dd4e3efc7c034ba1a71e4f6fb3f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combatEnabled: 1
-  inputTimer: 0.2
-  attack1Radius: 0.8
-  attack1Damage: 10
-  attack1HitBoxPos: {fileID: 997903329}
-  whatIsDamageable:
-    serializedVersion: 2
---- !u!58 &889139831
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.94499993
 --- !u!1 &997903328
 GameObject:
   m_ObjectHideFlags: 0
