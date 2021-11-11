@@ -9,6 +9,8 @@ public class Entity : MonoBehaviour
 
     public D_Entity entityData;
 
+    protected bool isDead;
+
     public int facingDirection { get; private set; }
     public Rigidbody2D rb { get; private set; }
     public Animator anim { get; private set; }
@@ -93,6 +95,10 @@ public class Entity : MonoBehaviour
             lastDamageDirection=-1;
         }else{
             lastDamageDirection=1;
+        }
+        if(currentHealth<=0){
+            isDead=true;
+            Destroy(gameObject);
         }
     }
     public virtual void Flip()
