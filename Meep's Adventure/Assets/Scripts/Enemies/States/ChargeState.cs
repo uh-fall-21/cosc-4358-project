@@ -11,6 +11,8 @@ public class ChargeState : State
     protected bool isDetectedWall;
     protected bool isChargeTimeOver;
 
+    protected bool performCloseRangeAction;
+
     public ChargeState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_ChargeState stateData) : base(etity, stateMachine, animBoolName)
     {
         this.stateData = stateData;
@@ -22,6 +24,8 @@ public class ChargeState : State
         isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
         isDetectedLedge = entity.CheckLedge();
         isDetectedWall = entity.CheckWall();
+
+        performCloseRangeAction = entity.CheckPlayerInCloseRangeAction();
     }
 
     public override void Enter()

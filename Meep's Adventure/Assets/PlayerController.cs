@@ -6,12 +6,25 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    [SerializeField] private DialogueUI dialogueUI;
+
+    public DialogueUI DialogueUI => dialogueUI;
+    public IInteractable Interactable { get; set; }
+
     private float movementInputDirection;
     private float jumpTimer;
     private float turnTimer;
     private float wallJumpTimer;
+    private float dashTimeLeft;
+    private float lastImageXpos;
+    private float lastDash = -100f;
 
-    private int amountOfJumpLeft;
+    private float knockbackStartTime;
+    
+    [SerializeField]
+    private float knockbackDuration;
+    
+    private int amountOfJumpsLeft;
     private int facingDirection = 1;
     private int lastWallJumpDirection;
 
@@ -27,6 +40,11 @@ public class PlayerController : MonoBehaviour
     private bool canFlip;
     private bool hasWallJumped;
     private bool isWalking;
+    private bool knockback;
+
+    [SerializeField]
+    private Vector2 knockbackSpeed;
+    private bool isDashing;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -46,6 +64,10 @@ public class PlayerController : MonoBehaviour
     public float jumpTimerSet = 0.15f;
     public float turnTimerSet = 0.1f;
     public float wallJumpTimerSet = 0.5f;
+    public float dashTime;
+    public float dashSpeed;
+    public float distanceBetweenImages;
+    public float dashCoolDown;
 
     public Vector2 wallHopDirection;
     public Vector2 wallJumpDirection;
@@ -64,7 +86,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        amountOfJumpLeft = amountOfJumps;
+        amountOfJumpsLeft = amountOfJumps;
         wallHopDirection.Normalize();
         wallJumpDirection.Normalize();
 
@@ -73,12 +95,28 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialogueUI.IsOpen)
+        {
+            return;
+        }
         CheckInput();
         CheckMovementDirection();
         CheckIfCanJump();
         CheckIfWallSliding();
         CheckJump();
         UpdateAnimations();
+
+        
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if(Interactable != null)
+            {
+                Interactable.Interact(this);
+            }
+        }
+        CheckDash();
+        CheckKnockback();
     }
 
     private void CheckIfWallSliding()
@@ -94,11 +132,28 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    
+    public bool GetDashStatus(){
+        return isDashing;
+    }
+    
+    public void Knockback(int direction){
+        knockback=true;
+        knockbackStartTime = Time.time;
+        rb.velocity= new Vector2(knockbackSpeed.x*direction,knockbackSpeed.y);
+    }
+
+    private void CheckKnockback(){
+        if(Time.time>=knockbackStartTime+knockbackDuration && knockback){
+            knockback=false;
+            rb.velocity=new Vector2(0.0f,rb.velocity.y);
+        }
+    }
     private void CheckIfCanJump()
     {
         if (isGrounded && rb.velocity.y <= 0.1f)
         {
-            amountOfJumpLeft = amountOfJumps;
+            amountOfJumpsLeft = amountOfJumps;
 
         }
 
@@ -107,7 +162,7 @@ public class PlayerController : MonoBehaviour
             canWallJump = true;
         }
 
-        if (amountOfJumpLeft <= 0)
+        if (amountOfJumpsLeft <= 0)
         {
             canNormalJump = false;
         }
@@ -174,7 +229,7 @@ public class PlayerController : MonoBehaviour
 
     private void Flip()
     {
-        if (!isWallSliding && canFlip)
+        if (!isWallSliding && canFlip && !knockback)
         {
             facingDirection *= -1;
             isFacingRight = !isFacingRight;
@@ -190,7 +245,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            if (isGrounded || (amountOfJumpLeft > 0 && !isTouchingWall))
+            if (isGrounded || (amountOfJumpsLeft > 0 && !isTouchingWall))
             {
                 NormalJump();
             }
@@ -228,7 +283,50 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * variableJumpHeightMultiplier);
         }
 
+        if (Input.GetButtonDown("Dash"))
+        {
+            if(Time.time >= (lastDash + dashCoolDown))
+            AttemptToDash();
+        }
+    }
 
+    private void AttemptToDash()
+    {
+        isDashing = true;
+        dashTimeLeft = dashTime;
+        lastDash = Time.time;
+
+        PlayerAfterImagePool.Instance.GetFromPool();
+        lastImageXpos = transform.position.x;
+    }
+
+    private void CheckDash()
+    {
+        if (isDashing)
+        {
+            //SoundManagerScript.PlaySound("dashSound");
+            if(dashTimeLeft > 0)
+            {
+                canMove = false;
+                canFlip = false;
+                rb.velocity = new Vector2(dashSpeed * facingDirection, rb.velocity.y);
+                dashTimeLeft -= Time.deltaTime;
+                
+
+                if(Mathf.Abs(transform.position.x - lastImageXpos) > distanceBetweenImages)
+                {
+                    PlayerAfterImagePool.Instance.GetFromPool();
+                    lastImageXpos = transform.position.x;
+                }
+            }
+
+            if(dashTimeLeft <= 0 || isTouchingWall)
+            {
+                isDashing = false;
+                canMove = true;
+                canFlip = true;
+            }
+        }
     }
 
     private void CheckJump()
@@ -275,10 +373,11 @@ public class PlayerController : MonoBehaviour
         if (canNormalJump && !isWallSliding)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            amountOfJumpLeft--;
+            amountOfJumpsLeft--;
             jumpTimer = 0;
             isAttemptingToJump = false;
             checkJumpMultiplier = true;
+            SoundManagerScript.PlaySound("JumpNoiseProcessed");
         }
     }
 
@@ -288,8 +387,8 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, 0.0f);
             isWallSliding = false;
-            amountOfJumpLeft = amountOfJumps;
-            amountOfJumpLeft--;
+            amountOfJumpsLeft = amountOfJumps;
+            amountOfJumpsLeft--;
             Vector2 forceToAdd = new Vector2(wallJumpForce * wallJumpDirection.x * movementInputDirection, wallJumpForce * wallJumpDirection.y);
             rb.AddForce(forceToAdd, ForceMode2D.Impulse);
             jumpTimer = 0;
@@ -301,16 +400,17 @@ public class PlayerController : MonoBehaviour
             hasWallJumped = true;
             wallJumpTimer = wallJumpTimerSet;
             lastWallJumpDirection = -facingDirection;
+            SoundManagerScript.PlaySound("JumpNoiseProcessed");
         }
     }
 
     private void ApplyMovement()
     {
-        if (!isGrounded && !isWallSliding && movementInputDirection == 0)
+        if (!isGrounded && !isWallSliding && movementInputDirection == 0 && !knockback)
         {
             rb.velocity = new Vector2(rb.velocity.x * airDragMultiplier, rb.velocity.y);
         }
-        else if (canMove)
+        else if (canMove && !knockback)
         {
             rb.velocity = new Vector2(movementSpeed * movementInputDirection, rb.velocity.y);
         }

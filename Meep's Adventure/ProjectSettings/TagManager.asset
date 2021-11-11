@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Damageable
   - Dead
   - Player
-  - 
+  - NPC
   - 
   - 
   - 
@@ -62,6 +63,9 @@ TagManager:
     locked: 0
   - name: Bullet
     uniqueID: 2998039229
+    locked: 0
+  - name: NPC
+    uniqueID: 256708501
     locked: 0
   - name: Player
     uniqueID: 3326755309
