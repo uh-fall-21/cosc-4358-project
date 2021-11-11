@@ -18,21 +18,26 @@ public class GameManager : MonoBehaviour
 
     private CinemachineVirtualCamera CVC;
 
-    private void Start(){
+    private void Start()
+    {
         CVC = GameObject.Find("Player Camera").GetComponent<CinemachineVirtualCamera>();
     }
 
-    private void Update(){
+    private void Update()
+    {
         CheckRespawn();
     }
-
-    public void Respawn(){
+    public void Respawn()
+    {
         respawnTimeStart = Time.time;
         respawn = true;
+        //respawn = false;
     }
 
-    private void CheckRespawn(){
-        if(Time.time >= respawnTimeStart + respawnTime && respawn){
+    private void CheckRespawn()
+    {
+        if(Time.time >= respawnTimeStart + respawnTime && respawn)
+        {
             var playerTemp = Instantiate(player, respawnPoint);
             CVC.m_Follow = playerTemp.transform;
             respawn = false;
