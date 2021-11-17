@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-
-    public HealthBar healthbar;
-
     [SerializeField]
     private float maxHealth;
 
@@ -19,13 +16,11 @@ public class PlayerStats : MonoBehaviour
 
     private void Start(){
         currentHealth=maxHealth;
-        healthbar.setMaxHealth(maxHealth);
         GM = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     public void DecreaseHealth(float amount){
         currentHealth-=amount;
-        healthbar.setHealth(currentHealth);
 
         if(currentHealth<=0.0f){
             Die();
