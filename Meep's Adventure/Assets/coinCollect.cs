@@ -6,7 +6,7 @@ public class coinCollect : MonoBehaviour
 {
     private float coins = 0;
 
-    public TextMeshProUI textcoin;  
+    public TextMeshProUGUI textcoin;  
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.transform.tag == "coin")
