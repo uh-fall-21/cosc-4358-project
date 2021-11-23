@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/SpacePlanet.unity
+    guid: 167fc87b3a3df3d48b78ab88733b62a5
+  - enabled: 0
     path: Assets/Scenes/level2.unity
     guid: 1be54d8cc9b714008a8738419a36bdf7
   - enabled: 1
