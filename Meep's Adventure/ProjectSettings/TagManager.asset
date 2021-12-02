@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - coin
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -69,4 +70,7 @@ TagManager:
     locked: 0
   - name: Coins
     uniqueID: 534346869
+    locked: 0
+  - name: Test
+    uniqueID: 3423095741
     locked: 0
