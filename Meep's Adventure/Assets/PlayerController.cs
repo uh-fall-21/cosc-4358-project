@@ -274,6 +274,7 @@ public class PlayerController : MonoBehaviour
     private void AttemptToDash()
     {
         isDashing = true;
+        SoundManagerScript.PlaySound("dashSound");
         dashTimeLeft = dashTime;
         lastDash = Time.time;
 
@@ -285,7 +286,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isDashing)
         {
-            //SoundManagerScript.PlaySound("dashSound");
+            
             if(dashTimeLeft > 0)
             {
                 canMove = false;
