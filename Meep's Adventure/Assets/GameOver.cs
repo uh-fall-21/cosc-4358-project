@@ -7,7 +7,7 @@ public class GameOver : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("level");
     }
 
     public void QuitGame()
